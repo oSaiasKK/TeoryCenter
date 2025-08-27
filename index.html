@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>theoryCenter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Tela de login -->
+  <div id="loginScreen" class="login-screen">
+    <form id="loginForm" class="login-form">
+      <h2>Login</h2>
+      <input type="text" id="nick" placeholder="Nick" required />
+      <input type="password" id="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <!-- Conteúdo principal, escondido até login -->
+  <div id="mainContent" style="display:none;">
+    <header>
+      <div class="container">
+        <h1>theoryCenter</h1>
+        <nav>
+          <a href="#">Início</a>
+          <a href="#">Teorias</a>
+          <a href="#">Comunidade</a>
+        </nav>
+        <div id="userDisplay"></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="content">
+        <section class="new-post">
+          <h2>Publicar nova teoria</h2>
+          <form id="theoryForm">
+            <input
+              type="text"
+              id="title"
+              placeholder="Título da teoria"
+              required
+              autocomplete="off"
+            />
+            <textarea
+              id="content"
+              placeholder="Descreva sua teoria..."
+              required
+            ></textarea>
+            <button type="submit">Publicar</button>
+          </form>
+        </section>
+
+        <section id="postsContainer" class="posts">
+          <!-- Postagens aparecerão aqui -->
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="widget">
+          <h3>Sobre o theoryCenter</h3>
+          <p>
+            Uma comunidade para compartilhar e discutir teorias sobre jogos e
+            ARGs.
+          </p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
