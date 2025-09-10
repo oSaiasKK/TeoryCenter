@@ -84,17 +84,6 @@ header h1 {
   font-size: 28px;
 }
 
-nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: #ccc;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #a259ff;
-}
-
 #userDisplay {
   color: #a259ff;
   font-weight: bold;
@@ -250,4 +239,5 @@ main.container {
 
 #logoutBtn:hover {
   background-color: #8a40e6;
+
 }
